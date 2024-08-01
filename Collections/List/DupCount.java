@@ -22,7 +22,7 @@ public class DupCount {
         for (int i = 0; i < n - 1; i++) {
             int c = 1;
             if (l2.contains(l1.get(i)))
-                break;
+                continue;
             else {
                 for (int j = i + 1; j < n; j++)
                     if (l1.get(i).equals(l1.get(j)))
