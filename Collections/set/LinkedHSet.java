@@ -9,6 +9,8 @@ public class LinkedHSet {
         lhs.add(345);
         lhs.add(56);
         lhs.add(1);
+        lhs.add(null);
+        lhs.add(null);
         System.out.println("Original Set:" + lhs);
         lhs.add(345);
         lhs.add(56);

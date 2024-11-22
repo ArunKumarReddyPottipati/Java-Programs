@@ -2,10 +2,12 @@ import java.util.*;
 
 public class ArrayList1 {
     public static void main(String[] args) {
-        int arr[] = new int[] { 1, 22, 3, 4 };
+        Integer arr[] =  { 1, 22, 3, 4 };
         ArrayList<Integer> a1 = new ArrayList<>();
         ArrayList<Integer> a2 = new ArrayList<>();
         ArrayList<Integer> a3 = new ArrayList<>();
+        ArrayList<Integer> a4 = new ArrayList<>(Arrays.asList(arr));
+        System.out.println(a4);
         a2.add(99);
         a2.add(77);
         a2.add(88);
@@ -20,8 +22,9 @@ public class ArrayList1 {
         a1.remove(0);
         System.out.println(a1);
         a1.removeAll(a2);
-        a1.set(2, 13);
+        a1.set(2, 1);
         System.out.println(a1);
+        a1.remove(a2.get(0));
         System.out.println(a1.indexOf(null));
         System.out.println(a1.size());
         System.out.println(a1.contains(5));
@@ -32,5 +35,6 @@ public class ArrayList1 {
         System.out.println(a1.clone());
         System.out.println(a1);
         Collections.synchronizedList(a1);
+        
     }
 }

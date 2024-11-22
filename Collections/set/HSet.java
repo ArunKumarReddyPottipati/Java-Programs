@@ -12,6 +12,8 @@ public class HSet {
         hs.add(345);
         hs.add(56);
         hs.add(1);
+        hs.add(null);
+        hs.add(null);
         System.out.println("After adding Duplicates:" + hs);
         hs.remove(56);
         System.out.println(hs);

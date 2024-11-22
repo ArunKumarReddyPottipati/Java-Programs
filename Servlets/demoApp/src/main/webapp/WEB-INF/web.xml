@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>demoApp</display-name>
+  <servlet>
+  	<servlet-name>addition</servlet-name>
+  	<servlet-class>demoApp.AddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addition</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>getnumbers</servlet-name>
+  	<servlet-class>demoApp.GetNumbers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>getnumbers</servlet-name>
+  	<url-pattern>/getnum</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>product</servlet-name>
+  	<servlet-class>demoApp.Product</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>product</servlet-name>
+  	<url-pattern>/prod</url-pattern>
+  </servlet-mapping>
+</web-app>
